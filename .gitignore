@@ -1,0 +1,39 @@
+# .gitignore para um projeto Robot Framework com Python
+
+# Arquivos e diretórios Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.egg
+*.txt
+*.egg-info/
+dist/
+build/
+*.egg-info/
+*.eggs/
+*.whl
+*.manifest
+*.spec
+
+# Arquivos e diretórios Robot Framework
+output/
+results/
+logs/
+*.robot.xml
+*.html
+*.log
+*.png
+
+# Arquivos de configuração do sistema operacional
+.DS_Store
+Thumbs.db
+sikuli_captured/
+
+# Arquivos de ambiente virtual
+venv/
+.env
+.envrc
+.venv/
