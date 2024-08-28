@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-08-28T07:22:51.848849" rpa="false" schemaversion="5">
+<suite id="s1" name="Notepad" source="c:\Users\leopo\robot-sikuli\tests\notepad.robot">
+<test id="s1-t1" name="Testa a Edição na Tela do Notepad" line="6">
+<kw name="Add Image Path" owner="SikuliLibrary">
+<arg>${EXECDIR}\\resources\\elements</arg>
+<doc>Add image path</doc>
+<status status="PASS" start="2024-08-28T07:22:54.898135" elapsed="0.044011"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2024-08-28T07:22:56.225547" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724840575478.png'/&gt;
+[log] CLICK on L[1028,840]@S(0) (578 msec)</msg>
+<arg>notepad_icon.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2024-08-28T07:22:54.943156" elapsed="1.283390"/>
+</kw>
+<kw name="Input Text" owner="SikuliLibrary">
+<msg time="2024-08-28T07:23:02.481725" level="INFO">Input Text:
+Este eh um teste automatizado criado com robot e sikuli</msg>
+<msg time="2024-08-28T07:23:02.481725" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724840576434.png'/&gt;
+[log] CLICK on L[231,192]@S(0) (570 msec)
+[log]  TYPE "Este eh um teste automatizado criado com robot e sikuli"</msg>
+<arg>text_area.png</arg>
+<arg>Este eh um teste automatizado criado com robot e sikuli</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<status status="PASS" start="2024-08-28T07:22:56.227546" elapsed="6.255079"/>
+</kw>
+<kw name="Exists" owner="SikuliLibrary">
+<arg>text_typed.png</arg>
+<doc>Exists</doc>
+<status status="PASS" start="2024-08-28T07:23:02.484622" elapsed="0.267211"/>
+</kw>
+<status status="PASS" start="2024-08-28T07:22:54.897134" elapsed="7.855700"/>
+</test>
+<status status="PASS" start="2024-08-28T07:22:51.853756" elapsed="10.900546"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Notepad">Notepad</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
