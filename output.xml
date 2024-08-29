@@ -1,51 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-08-28T07:26:07.762340" rpa="false" schemaversion="5">
-<suite id="s1" name="Notepad" source="c:\Users\leopo\robot-sikuli\tests\notepad.robot">
-<test id="s1-t1" name="Testa a Edição na Tela do Notepad" line="6">
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-08-29T09:59:16.902435" rpa="false" schemaversion="5">
+<suite id="s1" name="Exercicios" source="c:\Users\leopo\robot-sikuli\tests\exercicios.robot">
+<test id="s1-t1" name="Salvar Arquivo com Dados Inseridos no Bloco de Notas" line="27">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-29T09:59:19.403140" level="INFO">${texto} = bRsStJVNn9</msg>
+<var>${texto}</var>
+<arg>10</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-29T09:59:19.403140" elapsed="0.003001"/>
+</kw>
+<kw name="Load">
 <kw name="Add Image Path" owner="SikuliLibrary">
 <arg>${EXECDIR}\\resources\\elements</arg>
 <doc>Add image path</doc>
-<status status="PASS" start="2024-08-28T07:26:10.758157" elapsed="0.034335"/>
+<status status="PASS" start="2024-08-29T09:59:19.407140" elapsed="0.029999"/>
+</kw>
+<status status="PASS" start="2024-08-29T09:59:19.407140" elapsed="0.029999"/>
+</kw>
+<kw name="Abrir Bloco de Notas">
+<kw name="Wait Until Screen Contain" owner="SikuliLibrary">
+<msg time="2024-08-29T09:59:19.925762" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724936359917.png'/&gt;</msg>
+<arg>notepad_icon.png</arg>
+<arg>5</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="PASS" start="2024-08-29T09:59:19.439141" elapsed="0.486621"/>
 </kw>
 <kw name="Click" owner="SikuliLibrary">
-<msg time="2024-08-28T07:26:12.134179" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724840771383.png'/&gt;
-[log] CLICK on L[1028,840]@S(0) (577 msec)</msg>
+<msg time="2024-08-29T09:59:20.878269" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724936360102.png'/&gt;
+[log] CLICK on L[1028,840]@S(0) (567 msec)</msg>
 <arg>notepad_icon.png</arg>
 <doc>Click</doc>
-<status status="PASS" start="2024-08-28T07:26:10.793493" elapsed="1.341684"/>
+<status status="PASS" start="2024-08-29T09:59:19.925762" elapsed="0.953509"/>
+</kw>
+<status status="PASS" start="2024-08-29T09:59:19.439141" elapsed="1.440130"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2024-08-29T09:59:22.715784" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724936362031.png'/&gt;
+[log] CLICK on L[74,86]@S(0) (559 msec)</msg>
+<arg>btn_arquivo.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2024-08-29T09:59:20.879271" elapsed="1.837467"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2024-08-29T09:59:23.914764" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724936363212.png'/&gt;
+[log] CLICK on L[96,122]@S(0) (564 msec)</msg>
+<arg>menu_nova_guia.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2024-08-29T09:59:22.717654" elapsed="1.198114"/>
+</kw>
+<kw name="Input Text" owner="SikuliLibrary">
+<msg time="2024-08-29T09:59:26.793722" level="INFO">Input Text:
+Texto - bRsStJVNn9</msg>
+<msg time="2024-08-29T09:59:26.793722" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724936364101.png'/&gt;
+[log] CLICK on L[564,299]@S(0) (558 msec)
+[log]  TYPE "Texto - bRsStJVNn9"</msg>
+<arg>text_area.png</arg>
+<arg>Texto - ${texto}</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<status status="PASS" start="2024-08-29T09:59:23.916278" elapsed="2.877444"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2024-08-29T09:59:27.635477" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724936366948.png'/&gt;
+[log] CLICK on L[74,86]@S(0) (558 msec)</msg>
+<arg>btn_arquivo.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2024-08-29T09:59:26.794705" elapsed="0.840772"/>
+</kw>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2024-08-29T09:59:28.588222" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724936367840.png'/&gt;
+[log] CLICK on L[99,223]@S(0) (569 msec)</msg>
+<arg>menu_item_salvar.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2024-08-29T09:59:27.636473" elapsed="0.951749"/>
 </kw>
 <kw name="Press Special Key" owner="SikuliLibrary">
-<msg time="2024-08-28T07:26:12.294971" level="INFO">[log]  TYPE "#DEL."</msg>
+<msg time="2024-08-29T09:59:28.698266" level="INFO">[log]  TYPE "#DEL."</msg>
 <arg>DELETE</arg>
 <doc>Press special key
  Presses a special keyboard key.</doc>
-<status status="PASS" start="2024-08-28T07:26:12.136180" elapsed="0.158791"/>
+<status status="PASS" start="2024-08-29T09:59:28.589221" elapsed="0.109045"/>
 </kw>
-<kw name="Input Text" owner="SikuliLibrary">
-<msg time="2024-08-28T07:26:18.555618" level="INFO">Input Text:
-Este eh um teste automatizado criado com robot e sikuli</msg>
-<msg time="2024-08-28T07:26:18.555618" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724840772574.png'/&gt;
-[log] CLICK on L[237,200]@S(0) (567 msec)
-[log]  TYPE "Este eh um teste automatizado criado com robot e sikuli"</msg>
-<arg>text_area.png</arg>
-<arg>Este eh um teste automatizado criado com robot e sikuli</arg>
-<doc>Input text.
- Image could be empty</doc>
-<status status="PASS" start="2024-08-28T07:26:12.295903" elapsed="6.259715"/>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2024-08-29T09:59:30.221589" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724936369513.png'/&gt;
+[log] CLICK on L[630,472]@S(0) (567 msec)</msg>
+<arg>btn_salvar.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2024-08-29T09:59:28.699268" elapsed="1.522321"/>
 </kw>
-<kw name="Exists" owner="SikuliLibrary">
-<arg>text_typed.png</arg>
-<doc>Exists</doc>
-<status status="PASS" start="2024-08-28T07:26:18.557745" elapsed="0.252901"/>
+<kw name="Click" owner="SikuliLibrary">
+<msg time="2024-08-29T09:59:31.152758" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1724936370433.png'/&gt;
+[log] CLICK on L[1147,46]@S(0) (586 msec)</msg>
+<arg>icon_close.png</arg>
+<doc>Click</doc>
+<status status="PASS" start="2024-08-29T09:59:30.222590" elapsed="0.931172"/>
 </kw>
-<kw name="Close Application" owner="SikuliLibrary">
-<arg>Notepad</arg>
-<doc>Close application</doc>
-<status status="PASS" start="2024-08-28T07:26:18.811691" elapsed="0.021669"/>
-</kw>
-<status status="PASS" start="2024-08-28T07:26:10.756710" elapsed="8.077575"/>
+<status status="PASS" start="2024-08-29T09:59:19.401141" elapsed="11.753618"/>
 </test>
-<status status="PASS" start="2024-08-28T07:26:07.767339" elapsed="11.067929"/>
+<status status="PASS" start="2024-08-29T09:59:16.907435" elapsed="14.249326"/>
 </suite>
 <statistics>
 <total>
@@ -54,7 +107,7 @@ Este eh um teste automatizado criado com robot e sikuli</msg>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Notepad">Notepad</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercicios">Exercicios</stat>
 </suite>
 </statistics>
 <errors>
